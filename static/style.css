@@ -1,0 +1,26 @@
+body {
+  background-image: url("/static/BackG.jpg");
+  background-size: cover;
+  overflow: hidden;
+}
+
+h1 {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: max-content;
+  color: crimson;
+}
+h2 {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: white;
+}
+
+form {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: greenyellow;
+}
+
+form textarea {
+  resize: none;
+}

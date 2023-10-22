@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anime_FeedBack</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}" />
+  </head>
+  <body>
+    <h1>Anime_FeedBack.com</h1>
+
+    <h2>{{message}}</h2>
+
+    <form action="/Input" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" /><br /><br />
+
+      <label for="Email">Email:</label>
+      <input type="email" id="email" name="email" /><br /><br />
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="2" max="110" /><br /><br />
+
+      <label for="gender">Gender:</label>
+      <input type="radio" id="male" name="gender" value="Male" />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="Female" />
+      <label for="female">Female</label>
+      <input type="radio" id="other" name="gender" value="Other" />
+      <label for="other">Other</label><br /><br />
+
+      <label for="favorite_anime">Favorite Anime:</label>
+      <select id="anime" name="anime">
+        <!-- Action Anime -->
+        <option value=" " selected>--Please Select--</option>
+        <optgroup label="Action">
+          <option value="demon_slayer">Demon Slayer: Kimetsu no Yaiba</option>
+          <option value="black_clover">Black Clover</option>
+          <option value="jujutsu_kaisen">Jujutsu Kaisen</option>
+          <option value="one_punch_man">One Punch Man</option>
+          <option value="hxh">Hunter x Hunter</option>
+          <option value="assassin">
+            The World's Finest Assassin Gets Reincarnated in Another World as an
+            Aristocrat
+          </option>
+          <option value="mha">My Hero Academia</option>
+          <option value="naruto">Naruto</option>
+          <option value="aot">Attack on Titan</option>
+          <option value="Scissor">Scissor 7</option>
+        </optgroup>
+
+        <!-- Adventure Anime -->
+        <optgroup label="Adventure">
+          <option value="fma_brotherhood">
+            Fullmetal Alchemist: Brotherhood
+          </option>
+          <option value="one_piece">One Piece</option>
+          <option value="magi">Magi</option>
+          <option value="samurai_champloo">Samurai Champloo</option>
+        </optgroup>
+
+        <!-- Comedy Anime -->
+        <optgroup label="Comedy">
+          <option value="sakamoto">Haven’t You Heard? I’m Sakamoto</option>
+          <option value="onizuka">Great Teacher Onizuka</option>
+          <option value="lucky_star">Lucky Star</option>
+          <option value="saiki_k">The Disastrous Life of Saiki K</option>
+        </optgroup>
+
+        <!-- Drama Anime -->
+        <optgroup label="Drama">
+          <option value="silent_voice">A Silent Voice</option>
+          <option value="erased">ERASED</option>
+          <option value="hanasaku_iroha">Hanasaku Iroha</option>
+          <option value="honey_clover">Honey & Clover</option>
+        </optgroup>
+
+        <!-- Fan Anime -->
+        <optgroup label="Fan">
+          <option value="slime">That Time I Got Reincarnated as a Slime</option>
+          <option value="no_game_no_life">No Game No Life</option>
+          <option value="tokyo_ghoul">Tokyo Ghoul</option>
+          <option value="death_note">Death Note</option>
+        </optgroup>
+
+        <!-- Sci-Fi Anime -->
+        <optgroup label="Sci-Fi">
+          <option value="time_of_eve">Time of Eve</option>
+          <option value="casshern_sins">Casshern Sins</option>
+          <option value="promised_neverland">The Promised Neverland</option>
+          <option value="steamboy">Steamboy</option>
+        </optgroup>
+      </select>
+
+      <br /><br />
+
+      <label for="genre">Genre:</label>
+      <select id="genre" name="genre">
+        <option value=" " selected>--Please Select--</option>
+        <option value="Action">Action</option>
+        <option value="Adventure">Adventure</option>
+        <option value="Comedy">Comedy</option>
+        <option value="Drama">Drama</option>
+        <option value="Fantasy">Fantasy</option>
+        <option value="Sci-Fi">Sci-Fi</option></select
+      ><br /><br />
+
+      <label for="feedback">Feedback (if any):</label><br />
+      <textarea
+        id="feedback"
+        name="feedback"
+        rows="4"
+        cols="50"
+        placeholder="IF your Fav. anime is not on List we are sorry &  Please drop that in this box"
+        maxlength="100"
+      ></textarea
+      ><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
