@@ -47,5 +47,10 @@ def Input():
     else:
         return render_template('thanks.html')
 
+@app.errorhandler(400)
+def bad_request(error):
+    return render_template('index.html', message="Please fill details correctly")
+
+
 if __name__ == "__main__":
     app.run(port=3884)
