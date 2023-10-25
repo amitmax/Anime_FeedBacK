@@ -53,4 +53,4 @@ def bad_request(error):
 
 
 if __name__ == "__main__":
-    app.run(port=3884)
+    app.run()
