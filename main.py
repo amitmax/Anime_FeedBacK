@@ -3,7 +3,7 @@ from sqlalchemy import create_engine,text
 
 
 class DB:
-    connection_string = "mysql+mysqlconnector://elt5vab00kzesv73gevl:pscale_pw_bn70vyZSsbfzzKmdP80SrxUc9rtAyvPtdJJrE1eBOjY@aws.connect.psdb.cloud:3306/ani_feedback"
+    connection_string = "mysql+mysqlconnector://*****************************************************************@aws.connect.psdb.cloud:3306/ani_feedback"
     engine = create_engine(connection_string,)
 
     connection = engine.connect()
